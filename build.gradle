@@ -1,0 +1,15 @@
+plugins {
+    id "java"
+    id "application"
+}
+
+repositories {
+    jcenter()
+}
+
+mainClassName = "com.mageddo.kafka.spring.AppMain"
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.5.5'
+    implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.7.7'
+}
